@@ -9,8 +9,14 @@ function! s:SearchWPRoot(name, declaration)
   else
     let l:hook = '(add_filter|add_action)'
   endif
+  "substitute("add_action\|add_filter", "\|", "\\\\|", "")
 
-  exec 'Ack "' . l:hook . '\(\s*''' . a:name . '(-.+)?''.*\)" ' . l:root
+  if exists("g:ackprg")
+    exec 'Ack "' . l:hook . '\(\s*''' . a:name . '(-.+)?''.*\)" ' . l:root
+  else
+    let l:hook = substitute(l:hook, "\|", "\\\\|", "")
+    exec 'grep -rE "' . l:hook . '\(\s*''' . a:name . '(-.+)?''.*\)" ' . l:root
+  endif
 
 endfunction
 

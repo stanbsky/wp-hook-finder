@@ -1,0 +1,13 @@
+=== wp-hook-finder 1.1.1 / 2013-09-28
+
+ * Added support for plain old grep for those who don't use Ack
+
+=== wp-hook-finder 1.1.0 / 2013-09-27
+
+ * Changed regex to match Genesis contextual filters, e.g. genesis_attr_site-header
+ * Allowed configuring mappings via .vimrc
+
+=== wp-hook-finder 1.0 / 2013-08-08
+
+ * Initial version, pasted as a StackOverflow answer at http://stackoverflow.com/a/18127321/1481335
+

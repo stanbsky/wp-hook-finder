@@ -2,13 +2,13 @@
 
 This plugin makes finding hooked functions in WordPress a cinch. It also allows finding the declaration of the given hook or filter in the source code.
 
-This plugin uses [Ack](http://beyondgrep.com/) for searching the WordPress root and [Ack.vim](https://github.com/mileszs/ack.vim) for the awesome quickfix list integration.
+If available, this plugin uses [Ack](http://beyondgrep.com/) and [Ack.vim](https://github.com/mileszs/ack.vim) instead of regular GREP.
 
 ## Installation ##
 
 ### Ack & Ack.vim ###
 
-Instructions for installing Ack and Ack.vim can be found on the [Ack.vim github](https://github.com/mileszs/ack.vim#installation)
+While not required, Ack and Ack.vim are highly recommended due to the quickfix list integration. Instructions for installing them can be found on the [Ack.vim github](https://github.com/mileszs/ack.vim#installation)
 
 ### Plugin ###
 
